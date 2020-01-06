@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F2C6FC23C3229800A2D1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C6FB23C3229800A2D1DA /* AppDelegate.swift */; };
+		04F2C6FE23C3229800A2D1DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C6FD23C3229800A2D1DA /* SceneDelegate.swift */; };
+		04F2C70023C3229800A2D1DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C6FF23C3229800A2D1DA /* ViewController.swift */; };
+		04F2C70323C3229800A2D1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C70123C3229800A2D1DA /* Main.storyboard */; };
+		04F2C70623C3229800A2D1DA /* StockMarketTrading.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C70423C3229800A2D1DA /* StockMarketTrading.xcdatamodeld */; };
+		04F2C70823C3229A00A2D1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C70723C3229A00A2D1DA /* Assets.xcassets */; };
+		04F2C70B23C3229A00A2D1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C70923C3229A00A2D1DA /* LaunchScreen.storyboard */; };
+		04F2C71623C3229A00A2D1DA /* StockMarketTradingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C71523C3229A00A2D1DA /* StockMarketTradingTests.swift */; };
+		04F2C72123C3229A00A2D1DA /* StockMarketTradingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C72023C3229A00A2D1DA /* StockMarketTradingUITests.swift */; };
+		1749023E2A20F34A81F4E860 /* Pods_StockMarketTradingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB137491B291CC85F7EAA03D /* Pods_StockMarketTradingTests.framework */; };
+		4E7D2B52BA0BF089FB4021DE /* Pods_StockMarketTrading_StockMarketTradingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7057BACBFF55C605B34B5F1B /* Pods_StockMarketTrading_StockMarketTradingUITests.framework */; };
+		C2059915FAF20D367BAD2A62 /* Pods_StockMarketTrading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3A4AD6E8B955C7BA45DAC0 /* Pods_StockMarketTrading.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04F2C71223C3229A00A2D1DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F2C6F023C3229800A2D1DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F2C6F723C3229800A2D1DA;
+			remoteInfo = StockMarketTrading;
+		};
+		04F2C71D23C3229A00A2D1DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04F2C6F023C3229800A2D1DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04F2C6F723C3229800A2D1DA;
+			remoteInfo = StockMarketTrading;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F2C6F823C3229800A2D1DA /* StockMarketTrading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockMarketTrading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F2C6FB23C3229800A2D1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04F2C6FD23C3229800A2D1DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04F2C6FF23C3229800A2D1DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04F2C70223C3229800A2D1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04F2C70523C3229800A2D1DA /* StockMarketTrading.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StockMarketTrading.xcdatamodel; sourceTree = "<group>"; };
+		04F2C70723C3229A00A2D1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04F2C70A23C3229A00A2D1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04F2C70C23C3229A00A2D1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F2C71123C3229A00A2D1DA /* StockMarketTradingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockMarketTradingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F2C71523C3229A00A2D1DA /* StockMarketTradingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMarketTradingTests.swift; sourceTree = "<group>"; };
+		04F2C71723C3229A00A2D1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F2C71C23C3229A00A2D1DA /* StockMarketTradingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockMarketTradingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04F2C72023C3229A00A2D1DA /* StockMarketTradingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMarketTradingUITests.swift; sourceTree = "<group>"; };
+		04F2C72223C3229A00A2D1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D3A4AD6E8B955C7BA45DAC0 /* Pods_StockMarketTrading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockMarketTrading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17615B426D5C02ECD4DDB54B /* Pods-StockMarketTrading-StockMarketTradingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarketTrading-StockMarketTradingUITests.release.xcconfig"; path = "Target Support Files/Pods-StockMarketTrading-StockMarketTradingUITests/Pods-StockMarketTrading-StockMarketTradingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E1C633FF6D261686F459BE6 /* Pods-StockMarketTradingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarketTradingTests.debug.xcconfig"; path = "Target Support Files/Pods-StockMarketTradingTests/Pods-StockMarketTradingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64C1C4CED5A8482F5FC3C816 /* Pods-StockMarketTrading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarketTrading.debug.xcconfig"; path = "Target Support Files/Pods-StockMarketTrading/Pods-StockMarketTrading.debug.xcconfig"; sourceTree = "<group>"; };
+		7057BACBFF55C605B34B5F1B /* Pods_StockMarketTrading_StockMarketTradingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockMarketTrading_StockMarketTradingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75ED975483B1A16C9660EB07 /* Pods-StockMarketTrading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarketTrading.release.xcconfig"; path = "Target Support Files/Pods-StockMarketTrading/Pods-StockMarketTrading.release.xcconfig"; sourceTree = "<group>"; };
+		C53A5DCB1D92BF8271B99651 /* Pods-StockMarketTradingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarketTradingTests.release.xcconfig"; path = "Target Support Files/Pods-StockMarketTradingTests/Pods-StockMarketTradingTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB137491B291CC85F7EAA03D /* Pods_StockMarketTradingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockMarketTradingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFA3522B1946C4963F37F475 /* Pods-StockMarketTrading-StockMarketTradingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarketTrading-StockMarketTradingUITests.debug.xcconfig"; path = "Target Support Files/Pods-StockMarketTrading-StockMarketTradingUITests/Pods-StockMarketTrading-StockMarketTradingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F2C6F523C3229800A2D1DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2059915FAF20D367BAD2A62 /* Pods_StockMarketTrading.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F2C70E23C3229A00A2D1DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1749023E2A20F34A81F4E860 /* Pods_StockMarketTradingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F2C71923C3229A00A2D1DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E7D2B52BA0BF089FB4021DE /* Pods_StockMarketTrading_StockMarketTradingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F2C6EF23C3229800A2D1DA = {
+			isa = PBXGroup;
+			children = (
+				04F2C6FA23C3229800A2D1DA /* StockMarketTrading */,
+				04F2C71423C3229A00A2D1DA /* StockMarketTradingTests */,
+				04F2C71F23C3229A00A2D1DA /* StockMarketTradingUITests */,
+				04F2C6F923C3229800A2D1DA /* Products */,
+				62B36E747D9E61FE972D7B57 /* Pods */,
+				E115822AC6EED30058A040E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04F2C6F923C3229800A2D1DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F2C6F823C3229800A2D1DA /* StockMarketTrading.app */,
+				04F2C71123C3229A00A2D1DA /* StockMarketTradingTests.xctest */,
+				04F2C71C23C3229A00A2D1DA /* StockMarketTradingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04F2C6FA23C3229800A2D1DA /* StockMarketTrading */ = {
+			isa = PBXGroup;
+			children = (
+				04F2C6FB23C3229800A2D1DA /* AppDelegate.swift */,
+				04F2C6FD23C3229800A2D1DA /* SceneDelegate.swift */,
+				04F2C6FF23C3229800A2D1DA /* ViewController.swift */,
+				04F2C70123C3229800A2D1DA /* Main.storyboard */,
+				04F2C70723C3229A00A2D1DA /* Assets.xcassets */,
+				04F2C70923C3229A00A2D1DA /* LaunchScreen.storyboard */,
+				04F2C70C23C3229A00A2D1DA /* Info.plist */,
+				04F2C70423C3229800A2D1DA /* StockMarketTrading.xcdatamodeld */,
+			);
+			path = StockMarketTrading;
+			sourceTree = "<group>";
+		};
+		04F2C71423C3229A00A2D1DA /* StockMarketTradingTests */ = {
+			isa = PBXGroup;
+			children = (
+				04F2C71523C3229A00A2D1DA /* StockMarketTradingTests.swift */,
+				04F2C71723C3229A00A2D1DA /* Info.plist */,
+			);
+			path = StockMarketTradingTests;
+			sourceTree = "<group>";
+		};
+		04F2C71F23C3229A00A2D1DA /* StockMarketTradingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04F2C72023C3229A00A2D1DA /* StockMarketTradingUITests.swift */,
+				04F2C72223C3229A00A2D1DA /* Info.plist */,
+			);
+			path = StockMarketTradingUITests;
+			sourceTree = "<group>";
+		};
+		62B36E747D9E61FE972D7B57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64C1C4CED5A8482F5FC3C816 /* Pods-StockMarketTrading.debug.xcconfig */,
+				75ED975483B1A16C9660EB07 /* Pods-StockMarketTrading.release.xcconfig */,
+				DFA3522B1946C4963F37F475 /* Pods-StockMarketTrading-StockMarketTradingUITests.debug.xcconfig */,
+				17615B426D5C02ECD4DDB54B /* Pods-StockMarketTrading-StockMarketTradingUITests.release.xcconfig */,
+				5E1C633FF6D261686F459BE6 /* Pods-StockMarketTradingTests.debug.xcconfig */,
+				C53A5DCB1D92BF8271B99651 /* Pods-StockMarketTradingTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E115822AC6EED30058A040E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D3A4AD6E8B955C7BA45DAC0 /* Pods_StockMarketTrading.framework */,
+				7057BACBFF55C605B34B5F1B /* Pods_StockMarketTrading_StockMarketTradingUITests.framework */,
+				DB137491B291CC85F7EAA03D /* Pods_StockMarketTradingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04F2C6F723C3229800A2D1DA /* StockMarketTrading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F2C72523C3229A00A2D1DA /* Build configuration list for PBXNativeTarget "StockMarketTrading" */;
+			buildPhases = (
+				BDEB15794C23585C186B23E2 /* [CP] Check Pods Manifest.lock */,
+				04F2C6F423C3229800A2D1DA /* Sources */,
+				04F2C6F523C3229800A2D1DA /* Frameworks */,
+				04F2C6F623C3229800A2D1DA /* Resources */,
+				9897FB56A44BF5541A0A53FD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StockMarketTrading;
+			productName = StockMarketTrading;
+			productReference = 04F2C6F823C3229800A2D1DA /* StockMarketTrading.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04F2C71023C3229A00A2D1DA /* StockMarketTradingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F2C72823C3229A00A2D1DA /* Build configuration list for PBXNativeTarget "StockMarketTradingTests" */;
+			buildPhases = (
+				E4C17BEFA42882D9412BC449 /* [CP] Check Pods Manifest.lock */,
+				04F2C70D23C3229A00A2D1DA /* Sources */,
+				04F2C70E23C3229A00A2D1DA /* Frameworks */,
+				04F2C70F23C3229A00A2D1DA /* Resources */,
+				902427F5043C73FB04E32EC9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F2C71323C3229A00A2D1DA /* PBXTargetDependency */,
+			);
+			name = StockMarketTradingTests;
+			productName = StockMarketTradingTests;
+			productReference = 04F2C71123C3229A00A2D1DA /* StockMarketTradingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04F2C71B23C3229A00A2D1DA /* StockMarketTradingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04F2C72B23C3229A00A2D1DA /* Build configuration list for PBXNativeTarget "StockMarketTradingUITests" */;
+			buildPhases = (
+				58F102B335BFE56D8D237346 /* [CP] Check Pods Manifest.lock */,
+				04F2C71823C3229A00A2D1DA /* Sources */,
+				04F2C71923C3229A00A2D1DA /* Frameworks */,
+				04F2C71A23C3229A00A2D1DA /* Resources */,
+				4381303BC7BE1B82C469DACB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F2C71E23C3229A00A2D1DA /* PBXTargetDependency */,
+			);
+			name = StockMarketTradingUITests;
+			productName = StockMarketTradingUITests;
+			productReference = 04F2C71C23C3229A00A2D1DA /* StockMarketTradingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04F2C6F023C3229800A2D1DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nischal Hada";
+				TargetAttributes = {
+					04F2C6F723C3229800A2D1DA = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					04F2C71023C3229A00A2D1DA = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 04F2C6F723C3229800A2D1DA;
+					};
+					04F2C71B23C3229A00A2D1DA = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 04F2C6F723C3229800A2D1DA;
+					};
+				};
+			};
+			buildConfigurationList = 04F2C6F323C3229800A2D1DA /* Build configuration list for PBXProject "StockMarketTrading" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04F2C6EF23C3229800A2D1DA;
+			productRefGroup = 04F2C6F923C3229800A2D1DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04F2C6F723C3229800A2D1DA /* StockMarketTrading */,
+				04F2C71023C3229A00A2D1DA /* StockMarketTradingTests */,
+				04F2C71B23C3229A00A2D1DA /* StockMarketTradingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F2C6F623C3229800A2D1DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F2C70B23C3229A00A2D1DA /* LaunchScreen.storyboard in Resources */,
+				04F2C70823C3229A00A2D1DA /* Assets.xcassets in Resources */,
+				04F2C70323C3229800A2D1DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F2C70F23C3229A00A2D1DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F2C71A23C3229A00A2D1DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4381303BC7BE1B82C469DACB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockMarketTrading-StockMarketTradingUITests/Pods-StockMarketTrading-StockMarketTradingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockMarketTrading-StockMarketTradingUITests/Pods-StockMarketTrading-StockMarketTradingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockMarketTrading-StockMarketTradingUITests/Pods-StockMarketTrading-StockMarketTradingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58F102B335BFE56D8D237346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockMarketTrading-StockMarketTradingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		902427F5043C73FB04E32EC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockMarketTradingTests/Pods-StockMarketTradingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockMarketTradingTests/Pods-StockMarketTradingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockMarketTradingTests/Pods-StockMarketTradingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9897FB56A44BF5541A0A53FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockMarketTrading/Pods-StockMarketTrading-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockMarketTrading/Pods-StockMarketTrading-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockMarketTrading/Pods-StockMarketTrading-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDEB15794C23585C186B23E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockMarketTrading-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4C17BEFA42882D9412BC449 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockMarketTradingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04F2C6F423C3229800A2D1DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F2C70623C3229800A2D1DA /* StockMarketTrading.xcdatamodeld in Sources */,
+				04F2C70023C3229800A2D1DA /* ViewController.swift in Sources */,
+				04F2C6FC23C3229800A2D1DA /* AppDelegate.swift in Sources */,
+				04F2C6FE23C3229800A2D1DA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F2C70D23C3229A00A2D1DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F2C71623C3229A00A2D1DA /* StockMarketTradingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04F2C71823C3229A00A2D1DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F2C72123C3229A00A2D1DA /* StockMarketTradingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F2C71323C3229A00A2D1DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F2C6F723C3229800A2D1DA /* StockMarketTrading */;
+			targetProxy = 04F2C71223C3229A00A2D1DA /* PBXContainerItemProxy */;
+		};
+		04F2C71E23C3229A00A2D1DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04F2C6F723C3229800A2D1DA /* StockMarketTrading */;
+			targetProxy = 04F2C71D23C3229A00A2D1DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04F2C70123C3229800A2D1DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F2C70223C3229800A2D1DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04F2C70923C3229A00A2D1DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04F2C70A23C3229A00A2D1DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04F2C72323C3229A00A2D1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04F2C72423C3229A00A2D1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04F2C72623C3229A00A2D1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C1C4CED5A8482F5FC3C816 /* Pods-StockMarketTrading.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockMarketTrading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.StockMarketTrading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04F2C72723C3229A00A2D1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75ED975483B1A16C9660EB07 /* Pods-StockMarketTrading.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockMarketTrading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.StockMarketTrading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04F2C72923C3229A00A2D1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1C633FF6D261686F459BE6 /* Pods-StockMarketTradingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockMarketTradingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.StockMarketTradingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StockMarketTrading.app/StockMarketTrading";
+			};
+			name = Debug;
+		};
+		04F2C72A23C3229A00A2D1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53A5DCB1D92BF8271B99651 /* Pods-StockMarketTradingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockMarketTradingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.StockMarketTradingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StockMarketTrading.app/StockMarketTrading";
+			};
+			name = Release;
+		};
+		04F2C72C23C3229A00A2D1DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFA3522B1946C4963F37F475 /* Pods-StockMarketTrading-StockMarketTradingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockMarketTradingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.StockMarketTradingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StockMarketTrading;
+			};
+			name = Debug;
+		};
+		04F2C72D23C3229A00A2D1DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17615B426D5C02ECD4DDB54B /* Pods-StockMarketTrading-StockMarketTradingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StockMarketTradingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hadanischal.StockMarketTradingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StockMarketTrading;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04F2C6F323C3229800A2D1DA /* Build configuration list for PBXProject "StockMarketTrading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F2C72323C3229A00A2D1DA /* Debug */,
+				04F2C72423C3229A00A2D1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F2C72523C3229A00A2D1DA /* Build configuration list for PBXNativeTarget "StockMarketTrading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F2C72623C3229A00A2D1DA /* Debug */,
+				04F2C72723C3229A00A2D1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F2C72823C3229A00A2D1DA /* Build configuration list for PBXNativeTarget "StockMarketTradingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F2C72923C3229A00A2D1DA /* Debug */,
+				04F2C72A23C3229A00A2D1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04F2C72B23C3229A00A2D1DA /* Build configuration list for PBXNativeTarget "StockMarketTradingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04F2C72C23C3229A00A2D1DA /* Debug */,
+				04F2C72D23C3229A00A2D1DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		04F2C70423C3229800A2D1DA /* StockMarketTrading.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				04F2C70523C3229800A2D1DA /* StockMarketTrading.xcdatamodel */,
+			);
+			currentVersion = 04F2C70523C3229800A2D1DA /* StockMarketTrading.xcdatamodel */;
+			path = StockMarketTrading.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 04F2C6F023C3229800A2D1DA /* Project object */;
+}
