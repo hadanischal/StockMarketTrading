@@ -1,0 +1,51 @@
+#run 'swiftgen' in app project (WORKSPACE/App) and it will update the UIColors.swift file
+#Update colors using StandardColors.txt
+
+xcassets:
+  inputs:
+    - ./StockMarketTrading/Resources/Assets.xcassets
+    - ./StockMarketTrading/Resources/Icons.xcassets
+  outputs:
+    - templateName: swift4
+      output: ./StockMarketTrading/Generated/SwiftGen/Assets/Assets.swift
+
+fonts:
+  inputs:
+    - ./StockMarketTrading/Resources/Fonts
+  outputs:
+    - templateName: swift4
+      output: ./StockMarketTrading/Generated/SwiftGen/Fonts/GeneratedFonts.swift
+      
+ib:
+  inputs:
+    - ./StockMarketTrading/Base.lproj/LaunchScreen.storyboard
+    - ./StockMarketTrading/Base.lproj/Main.storyboard
+
+  outputs:
+    - templateName: scenes-swift4
+      output: ./StockMarketTrading/Generated/SwiftGen/Storyboards/StoryboardScenes.swift
+    - templateName: segues-swift4
+      output: ./StockMarketTrading/Generated/SwiftGen/Storyboards/StoryboardSegues.swift
+    
+colors:
+  inputs:
+    - ./StockMarketTrading/Resources/Colors/StandardColors.txt
+  outputs:
+    templateName: swift4
+    output: ./StockMarketTrading/Generated/SwiftGen/Colors/GeneratedColors.swift
+    
+    
+strings:
+  inputs:
+    - ./StockMarketTrading/Resources/Strings/DashBoard.strings
+    - ./StockMarketTrading/Resources/Strings/Mock.strings
+  outputs:
+    - templateName: structured-swift4
+      output: ./StockMarketTrading/Generated/SwiftGen/Strings/GeneratedStrings.swift
+
+json:
+  inputs:
+    - ./StockMarketTrading/Resources/JsonFIle/BlockchainTicker.json
+  outputs:
+    - templateName: runtime-swift4
+      output: ./StockMarketTrading/Generated/SwiftGen/JSONFiles/GeneratedJSONFiles.swift
