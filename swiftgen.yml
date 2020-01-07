@@ -46,6 +46,8 @@ strings:
 json:
   inputs:
     - ./StockMarketTrading/Resources/JsonFIle/BlockchainTicker.json
+    - ./StockMarketTradingTests/MockResources/PaymentsNetwork.json
+
   outputs:
     - templateName: runtime-swift4
       output: ./StockMarketTrading/Generated/SwiftGen/JSONFiles/GeneratedJSONFiles.swift

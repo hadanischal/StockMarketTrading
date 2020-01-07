@@ -4,12 +4,13 @@
 target 'StockMarketTrading' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for StockMarketTrading
-pod 'RxSwift', '~> 5'
-pod 'RxCocoa', '~> 5'
-pod 'SwiftLint'
-pod 'SwiftGen', '~> 6.0'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'SwiftLint'
+  pod 'SwiftGen', '~> 6.0'
+  pod 'PKHUD', '~> 5.0'
 
   target 'StockMarketTradingTests' do
     inherit! :search_paths
@@ -21,9 +22,9 @@ pod 'SwiftGen', '~> 6.0'
     pod 'RxTest',     '~> 5.0'
     
   end
-
+  
   target 'StockMarketTradingUITests' do
     # Pods for testing
   end
-
+  
 end

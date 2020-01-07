@@ -1,6 +1,7 @@
 PODS:
   - Cuckoo (1.0.6)
   - Nimble (8.0.5)
+  - PKHUD (5.3.0)
   - Quick (2.1.0)
   - RxBlocking (5.0.1):
     - RxSwift (~> 5)
@@ -18,6 +19,7 @@ PODS:
 DEPENDENCIES:
   - Cuckoo (~> 1.0.6)
   - Nimble (~> 8)
+  - PKHUD (~> 5.0)
   - Quick (~> 2.1.0)
   - RxBlocking (~> 5.0)
   - RxCocoa (~> 5)
@@ -30,6 +32,7 @@ SPEC REPOS:
   trunk:
     - Cuckoo
     - Nimble
+    - PKHUD
     - Quick
     - RxBlocking
     - RxCocoa
@@ -42,6 +45,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Cuckoo: 8074fc309159c4862665b83798f5ad03e061e8bd
   Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
@@ -51,6 +55,6 @@ SPEC CHECKSUMS:
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
 
-PODFILE CHECKSUM: 068784e0707aadfc857bcb6855290c248a0b907c
+PODFILE CHECKSUM: 8363656977305447ae98086f3ee7518ad70ccf72
 
 COCOAPODS: 1.8.4
