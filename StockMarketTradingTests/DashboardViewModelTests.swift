@@ -61,17 +61,20 @@ final class DashboardViewModelTests: QuickSpec {
                         stub(mockPaymentsNetworking, block: { stub in
                             when(stub.getPriceInfo()).thenReturn(Observable.just(mockPriceModel))
                         })
-
-                        testScheduler.scheduleAt(300, action: {
-                            testViewModel.viewDidLoad()
-                        })
+                        testViewModel.viewDidLoad()
                     }
                     it("it call PaymentsNetworking for Price info") {
-                        testScheduler.scheduleAt(300, action: {
-                            verify(mockPaymentsNetworking).getPriceInfo()
-                        })
+                        verify(mockPaymentsNetworking).getPriceInfo()
+                    }
+                    it("update Price accountInfo to updated value") {
+                        let correctResult: PriceModel = mockPriceModel.filter { $0.key == "GBP" }
+                        expect(testViewModel.accountInfo?.count).to(equal(1))
+                        expect(testViewModel.accountInfo).to(equal(correctResult))
                     }
                     it("emits the Price Result to the UI") {
+                        testScheduler.scheduleAt(300) {
+                            testViewModel.viewDidLoad()
+                        }
                         let res = testScheduler.start { testViewModel.priceResult.asObservable() }
                         expect(res.events.count).to(equal(1))
                         let correctResult = [Recorded.next(300, mockPriceModel)]
@@ -84,14 +87,14 @@ final class DashboardViewModelTests: QuickSpec {
                         stub(mockPaymentsNetworking, block: { stub in
                             when(stub.getPriceInfo()).thenReturn(Observable.error(RxError.noElements))
                         })
-                        testScheduler.scheduleAt(300, action: {
-                            testViewModel.viewDidLoad()
-                        })
+                        testViewModel.viewDidLoad()
                     }
                     it("it call PaymentsNetworking for Price info") {
-                        testScheduler.scheduleAt(300, action: {
-                            verify(mockPaymentsNetworking).getPriceInfo()
-                        })
+                        verify(mockPaymentsNetworking).getPriceInfo()
+                    }
+                    it("update Price accountInfo to updated value") {
+                        expect(testViewModel.accountInfo?.count).to(beNil())
+                        expect(testViewModel.accountInfo).to(beNil())
                     }
 
                     it("doesnt emits Price Result to the UI") {
@@ -595,6 +598,45 @@ final class DashboardViewModelTests: QuickSpec {
                         let correctResult = [Recorded.next(310, true), Recorded.next(310, false)]
                         expect(res.events).to(equal(correctResult))
                     }
+                }
+
+                context("When mockPaymentsNetworking returns fail valid") {
+                    beforeEach {
+                        stub(mockPaymentValidating) { (stub) in
+                            when(stub.validateAmounts(any())).thenReturn(ValidationResult.valid(message: nil))
+                            when(stub.validateUnits(any())).thenReturn(ValidationResult.valid(message: nil))
+                        }
+
+                        stub(mockPaymentsNetworking, block: { stub in
+                            when(stub.makePayment(any(), any())).thenReturn(Observable.error(mockError))
+                        })
+
+                        testScheduler.scheduleAt(300) {
+                            testViewModel.transformInput(stringInput, inputAmount: stringInput, confirmTaps: buttonTapInput)
+                        }
+                    }
+
+                    it("emits proceedComplete result to UI") {
+                        let res = testScheduler.start { testViewModel.proceedComplete }
+                        expect(res.events.count).to(equal(0))
+                        let correctResult: [Recorded<Event<Bool>>] = []
+                        expect(res.events).to(equal(correctResult))
+                    }
+
+                    it("doesn't emits proceedFailed result to UI") {
+                        let res = testScheduler.start { testViewModel.proceedFailed }
+                        expect(res.events.count).to(equal(1))
+                        let correctResult = [Recorded.next(310, "Error contacting server")]
+                        expect(res.events).to(equal(correctResult))
+                    }
+
+                    it("emits loaderStatus result to UI") {
+                        let res = testScheduler.start { testViewModel.loaderStatus }
+                        expect(res.events.count).to(equal(2))
+                        let correctResult = [Recorded.next(310, true), Recorded.next(310, false)]
+                        expect(res.events).to(equal(correctResult))
+                    }
+
                 }
             }
 
