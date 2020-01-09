@@ -12,24 +12,22 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
   internal enum DashBoard {
-    /// Email address badly formatted
-    internal static let loginEmailError = L10n.tr("DashBoard", "LOGIN_EMAIL_ERROR")
-    /// Please make sure to enter correct email and password
-    internal static let loginFailed = L10n.tr("DashBoard", "LOGIN_FAILED")
-    /// Login Failed
-    internal static let loginFailedTitle = L10n.tr("DashBoard", "LOGIN_FAILED_TITLE")
-    /// Password must be at least %d characters
-    internal static func loginPasswordError(_ p1: Int) -> String {
-      return L10n.tr("DashBoard", "LOGIN_PASSWORD_ERROR", p1)
-    }
-    /// Password badly formatted
-    internal static let loginPasswordErrorBadFormat = L10n.tr("DashBoard", "LOGIN_PASSWORD_ERROR_BAD_FORMAT")
-    /// Password different
-    internal static let loginPasswordErrorDifferent = L10n.tr("DashBoard", "LOGIN_PASSWORD_ERROR_DIFFERENT")
-    /// Password repeated
-    internal static let loginPasswordErrorRepeated = L10n.tr("DashBoard", "LOGIN_PASSWORD_ERROR_REPEATED")
-    /// Username can only contain numbers or digits
-    internal static let usernameError = L10n.tr("DashBoard", "USERNAME_ERROR")
+    /// Amount badly formatted
+    internal static let amountError = L10n.tr("DashBoard", "AMOUNT_ERROR")
+    /// Error
+    internal static let failedTitle = L10n.tr("DashBoard", "FAILED_TITLE")
+    /// Buy \n Market
+    internal static let headerDescription = L10n.tr("DashBoard", "HEADER_DESCRIPTION")
+    /// UK-100 Cash
+    internal static let headerTitle = L10n.tr("DashBoard", "HEADER_TITLE")
+    /// Level 1
+    internal static let level1Title = L10n.tr("DashBoard", "LEVEL1_TITLE")
+    /// Error contacting server
+    internal static let serverError = L10n.tr("DashBoard", "SERVER_ERROR")
+    /// CMS | CFD
+    internal static let title = L10n.tr("DashBoard", "TITLE")
+    /// Unit badly formatted
+    internal static let unitError = L10n.tr("DashBoard", "UNIT_ERROR")
   }
   internal enum Mock {
   }

@@ -14,6 +14,7 @@ final class CurrencyFormatter {
         let formatter = NumberFormatter()
         formatter.locale = Locale(identifier: "en_AU")
         formatter.numberStyle = .currency
+        formatter.currencySymbol = ""
         return formatter
     }()
 

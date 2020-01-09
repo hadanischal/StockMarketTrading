@@ -105,7 +105,7 @@ class DashboardViewModel: DashboardDataSource {
     // Reload Price list from server
     private func reloadTask() {
         let scheduler = SerialDispatchQueueScheduler(qos: .default)
-        Observable<Int>.interval(.seconds(10), scheduler: scheduler)
+        Observable<Int>.interval(.seconds(15), scheduler: scheduler)
             .flatMap { [weak self] _ -> Observable<PriceModel> in
                 return self?.getPriceListFromServer() ?? Observable.empty()
         }

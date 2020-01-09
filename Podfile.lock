@@ -15,6 +15,7 @@ PODS:
     - RxSwift (~> 5)
   - SwiftGen (6.1.0)
   - SwiftLint (0.38.0)
+  - SwiftRichString (3.5.1)
 
 DEPENDENCIES:
   - Cuckoo (~> 1.0.6)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - RxTest (~> 5.0)
   - SwiftGen (~> 6.0)
   - SwiftLint
+  - SwiftRichString
 
 SPEC REPOS:
   trunk:
@@ -41,6 +43,7 @@ SPEC REPOS:
     - RxTest
     - SwiftGen
     - SwiftLint
+    - SwiftRichString
 
 SPEC CHECKSUMS:
   Cuckoo: 8074fc309159c4862665b83798f5ad03e061e8bd
@@ -54,7 +57,8 @@ SPEC CHECKSUMS:
   RxTest: 0132f952a61da82d5233abedaa559df91e5330e5
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
+  SwiftRichString: e7da1b0b1d931d7e1cee5f217972309c36867e03
 
-PODFILE CHECKSUM: 8363656977305447ae98086f3ee7518ad70ccf72
+PODFILE CHECKSUM: 5fab3931b8cdc48735f1cbb80aaa91f42bc81318
 
 COCOAPODS: 1.8.4
