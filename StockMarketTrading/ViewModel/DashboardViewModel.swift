@@ -184,7 +184,7 @@ class DashboardViewModel: DashboardDataSource {
     private func updateAmount(withUnit validationResult: ValidationResult) {
         guard let accountValue = accountInfo, !accountValue.isEmpty else { return }
         guard let buyingRate = accountValue.first?.value.buy else { assertionFailure("rateValue is nil"); return }
-        // TODO: update info, determine buy or sale button click action latter
+        // TODO: update info, determine buy or sale depending on button click action latter
 
         guard validationResult.isValid,
             let unitValue = validationResult.description,
@@ -198,7 +198,7 @@ class DashboardViewModel: DashboardDataSource {
     private func updateUnit(withAmount validationResult: ValidationResult) {
         guard let accountValue = accountInfo, !accountValue.isEmpty else { return }
         guard let buyingRate = accountValue.first?.value.buy else { assertionFailure("rateValue is nil"); return }
-        // TODO: update info, determine buy or sale button click action latter
+        // TODO: update info, determine buy or sale depending on button click action latter
 
         guard validationResult.isValid,
             let unitValue = validationResult.description,
