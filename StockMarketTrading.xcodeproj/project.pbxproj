@@ -10,7 +10,13 @@
 		04419B8A23C40EDF00AAA181 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8923C40EDF00AAA181 /* ValidationResult.swift */; };
 		04419B8C23C40FC000AAA181 /* PaymentValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8B23C40FC000AAA181 /* PaymentValidation.swift */; };
 		04419B8E23C410BE00AAA181 /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8D23C410BE00AAA181 /* ValidationUtils.swift */; };
-		04419B9023C4204600AAA181 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8F23C4204600AAA181 /* BaseViewController.swift */; };
+		048855FD23C60509003AB62B /* UIView+FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048855FC23C60509003AB62B /* UIView+FadeTransition.swift */; };
+		049B1F9D23C6A5360096D0AF /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1F9C23C6A5360096D0AF /* DoubleExtension.swift */; };
+		04E0F24D23C6DCB300C6CC63 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F24C23C6DCB300C6CC63 /* CurrencyFormatter.swift */; };
+		04E0F24F23C6DF8800C6CC63 /* Style+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F24E23C6DF8800C6CC63 /* Style+Extension.swift */; };
+		04E0F25123C6E9DD00C6CC63 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F25023C6E9DD00C6CC63 /* BaseViewProtocol.swift */; };
+		04E0F25323C6F37B00C6CC63 /* AppearanceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F25223C6F37B00C6CC63 /* AppearanceType.swift */; };
+		04E0F25523C713B300C6CC63 /* CancelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F25423C713B300C6CC63 /* CancelButton.swift */; };
 		04F2C6FC23C3229800A2D1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C6FB23C3229800A2D1DA /* AppDelegate.swift */; };
 		04F2C6FE23C3229800A2D1DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C6FD23C3229800A2D1DA /* SceneDelegate.swift */; };
 		04F2C70023C3229800A2D1DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C6FF23C3229800A2D1DA /* ViewController.swift */; };
@@ -40,7 +46,6 @@
 		04F2C79E23C3262200A2D1DA /* NavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C75A23C3262200A2D1DA /* NavigationControllerExtension.swift */; };
 		04F2C79F23C3262200A2D1DA /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C75B23C3262200A2D1DA /* BundleExtension.swift */; };
 		04F2C7A123C3262200A2D1DA /* ColourConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C75D23C3262200A2D1DA /* ColourConstant.swift */; };
-		04F2C7A223C3262200A2D1DA /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C75E23C3262200A2D1DA /* UITableView+Extensions.swift */; };
 		04F2C7A323C3262200A2D1DA /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C76023C3262200A2D1DA /* UIAlertControllerExtension.swift */; };
 		04F2C7A423C3262200A2D1DA /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C76123C3262200A2D1DA /* AlertAction.swift */; };
 		04F2C7AB23C3262200A2D1DA /* DashBoard.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C76C23C3262200A2D1DA /* DashBoard.strings */; };
@@ -67,6 +72,8 @@
 		04F2C7D523C3545200A2D1DA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C7D223C3545100A2D1DA /* MockData.swift */; };
 		04F2C7D723C3547800A2D1DA /* PaymentsNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C7D623C3547800A2D1DA /* PaymentsNetworkTests.swift */; };
 		04F2C7D923C35C0900A2D1DA /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2C7D823C35C0900A2D1DA /* DashboardViewModelTests.swift */; };
+		04FCC5DB23C59E7500D1F685 /* PaymentValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FCC5DA23C59E7500D1F685 /* PaymentValidationTests.swift */; };
+		04FCC5DD23C59F1700D1F685 /* Cuckoo-GeneratedMocks.sh in Resources */ = {isa = PBXBuildFile; fileRef = 04FCC5DC23C59F1700D1F685 /* Cuckoo-GeneratedMocks.sh */; };
 		1749023E2A20F34A81F4E860 /* Pods_StockMarketTradingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB137491B291CC85F7EAA03D /* Pods_StockMarketTradingTests.framework */; };
 		4E7D2B52BA0BF089FB4021DE /* Pods_StockMarketTrading_StockMarketTradingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7057BACBFF55C605B34B5F1B /* Pods_StockMarketTrading_StockMarketTradingUITests.framework */; };
 		C2059915FAF20D367BAD2A62 /* Pods_StockMarketTrading.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3A4AD6E8B955C7BA45DAC0 /* Pods_StockMarketTrading.framework */; };
@@ -93,7 +100,13 @@
 		04419B8923C40EDF00AAA181 /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 		04419B8B23C40FC000AAA181 /* PaymentValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentValidation.swift; sourceTree = "<group>"; };
 		04419B8D23C410BE00AAA181 /* ValidationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtils.swift; sourceTree = "<group>"; };
-		04419B8F23C4204600AAA181 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		048855FC23C60509003AB62B /* UIView+FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FadeTransition.swift"; sourceTree = "<group>"; };
+		049B1F9C23C6A5360096D0AF /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		04E0F24C23C6DCB300C6CC63 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		04E0F24E23C6DF8800C6CC63 /* Style+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style+Extension.swift"; sourceTree = "<group>"; };
+		04E0F25023C6E9DD00C6CC63 /* BaseViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewProtocol.swift; path = StockMarketTrading/ViewController/BaseViewProtocol.swift; sourceTree = SOURCE_ROOT; };
+		04E0F25223C6F37B00C6CC63 /* AppearanceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceType.swift; sourceTree = "<group>"; };
+		04E0F25423C713B300C6CC63 /* CancelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButton.swift; sourceTree = "<group>"; };
 		04F2C6F823C3229800A2D1DA /* StockMarketTrading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockMarketTrading.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F2C6FB23C3229800A2D1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F2C6FD23C3229800A2D1DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,7 +142,6 @@
 		04F2C75A23C3262200A2D1DA /* NavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerExtension.swift; sourceTree = "<group>"; };
 		04F2C75B23C3262200A2D1DA /* BundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		04F2C75D23C3262200A2D1DA /* ColourConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourConstant.swift; sourceTree = "<group>"; };
-		04F2C75E23C3262200A2D1DA /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		04F2C76023C3262200A2D1DA /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 		04F2C76123C3262200A2D1DA /* AlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
 		04F2C76C23C3262200A2D1DA /* DashBoard.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = DashBoard.strings; sourceTree = "<group>"; };
@@ -156,6 +168,8 @@
 		04F2C7D223C3545100A2D1DA /* MockData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		04F2C7D623C3547800A2D1DA /* PaymentsNetworkTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsNetworkTests.swift; sourceTree = "<group>"; };
 		04F2C7D823C35C0900A2D1DA /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
+		04FCC5DA23C59E7500D1F685 /* PaymentValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentValidationTests.swift; sourceTree = "<group>"; };
+		04FCC5DC23C59F1700D1F685 /* Cuckoo-GeneratedMocks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Cuckoo-GeneratedMocks.sh"; sourceTree = "<group>"; };
 		0D3A4AD6E8B955C7BA45DAC0 /* Pods_StockMarketTrading.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockMarketTrading.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17615B426D5C02ECD4DDB54B /* Pods-StockMarketTrading-StockMarketTradingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarketTrading-StockMarketTradingUITests.release.xcconfig"; path = "Target Support Files/Pods-StockMarketTrading-StockMarketTradingUITests/Pods-StockMarketTrading-StockMarketTradingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5E1C633FF6D261686F459BE6 /* Pods-StockMarketTradingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockMarketTradingTests.debug.xcconfig"; path = "Target Support Files/Pods-StockMarketTradingTests/Pods-StockMarketTradingTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +217,30 @@
 				04419B8D23C410BE00AAA181 /* ValidationUtils.swift */,
 			);
 			path = PaymentValidation;
+			sourceTree = "<group>";
+		};
+		048855FB23C60509003AB62B /* UIView+FadeTransition */ = {
+			isa = PBXGroup;
+			children = (
+				048855FC23C60509003AB62B /* UIView+FadeTransition.swift */,
+			);
+			path = "UIView+FadeTransition";
+			sourceTree = "<group>";
+		};
+		049B1F9B23C6A5140096D0AF /* DoubleExtension */ = {
+			isa = PBXGroup;
+			children = (
+				049B1F9C23C6A5360096D0AF /* DoubleExtension.swift */,
+			);
+			path = DoubleExtension;
+			sourceTree = "<group>";
+		};
+		04E0F24B23C6DCA000C6CC63 /* CurrencyFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				04E0F24C23C6DCB300C6CC63 /* CurrencyFormatter.swift */,
+			);
+			path = CurrencyFormatter;
 			sourceTree = "<group>";
 		};
 		04F2C6EF23C3229800A2D1DA = {
@@ -262,6 +300,7 @@
 				04F2C7D123C3545100A2D1DA /* MockError.swift */,
 				04F2C7D623C3547800A2D1DA /* PaymentsNetworkTests.swift */,
 				04F2C7D823C35C0900A2D1DA /* DashboardViewModelTests.swift */,
+				04FCC5DA23C59E7500D1F685 /* PaymentValidationTests.swift */,
 				04F2C71523C3229A00A2D1DA /* StockMarketTradingTests.swift */,
 				04F2C71723C3229A00A2D1DA /* Info.plist */,
 			);
@@ -367,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				04F2C74823C3262200A2D1DA /* CustomButton.swift */,
+				04E0F25423C713B300C6CC63 /* CancelButton.swift */,
 				04F2C74923C3262200A2D1DA /* ReusableView.swift */,
 			);
 			path = CustomViews;
@@ -375,6 +415,7 @@
 		04F2C74F23C3262200A2D1DA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				049B1F9B23C6A5140096D0AF /* DoubleExtension */,
 				04F2C75023C3262200A2D1DA /* DateExtensions */,
 				04F2C75523C3262200A2D1DA /* FontExtension.swift */,
 				04F2C75623C3262200A2D1DA /* CustomViewExtension.swift */,
@@ -382,8 +423,8 @@
 				04F2C75A23C3262200A2D1DA /* NavigationControllerExtension.swift */,
 				04F2C75B23C3262200A2D1DA /* BundleExtension.swift */,
 				04F2C75D23C3262200A2D1DA /* ColourConstant.swift */,
-				04F2C75E23C3262200A2D1DA /* UITableView+Extensions.swift */,
 				04F2C75F23C3262200A2D1DA /* AlertControllerExtension */,
+				04E0F24E23C6DF8800C6CC63 /* Style+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -419,6 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				04F2C7C823C350EB00A2D1DA /* PriceModel.swift */,
+				04E0F25223C6F37B00C6CC63 /* AppearanceType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -474,6 +516,8 @@
 		04F2C77823C3262200A2D1DA /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				04E0F24B23C6DCA000C6CC63 /* CurrencyFormatter */,
+				048855FB23C60509003AB62B /* UIView+FadeTransition */,
 				04419B8823C40EC300AAA181 /* PaymentValidation */,
 			);
 			path = Utility;
@@ -493,7 +537,7 @@
 		04F2C78523C3262200A2D1DA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				04419B8F23C4204600AAA181 /* BaseViewController.swift */,
+				04E0F25023C6E9DD00C6CC63 /* BaseViewProtocol.swift */,
 				04F2C7C223C34F0800A2D1DA /* DashboardViewController.swift */,
 			);
 			path = ViewController;
@@ -502,6 +546,7 @@
 		04F2C7BD23C3407C00A2D1DA /* BuildScripts */ = {
 			isa = PBXGroup;
 			children = (
+				04FCC5DC23C59F1700D1F685 /* Cuckoo-GeneratedMocks.sh */,
 				04F2C72E23C3252100A2D1DA /* generate-swiftgen.sh */,
 				04F2C72F23C3252100A2D1DA /* swiftgen.yml */,
 				04F2C7BF23C3420600A2D1DA /* .swiftlint.yml */,
@@ -665,6 +710,7 @@
 				04F2C7B323C3262200A2D1DA /* source-sans-pro.bold.ttf in Resources */,
 				04F2C7C023C3420600A2D1DA /* .swiftlint.yml in Resources */,
 				04F2C7AC23C3262200A2D1DA /* Mock.strings in Resources */,
+				04FCC5DD23C59F1700D1F685 /* Cuckoo-GeneratedMocks.sh in Resources */,
 				04F2C70323C3229800A2D1DA /* Main.storyboard in Resources */,
 				04F2C7AF23C3262200A2D1DA /* Icons.xcassets in Resources */,
 			);
@@ -732,8 +778,9 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/StockMarketTrading//Networking/WebService.swift",
+				"$(SRCROOT)/StockMarketTrading/Networking/WebService.swift",
 				"$(SRCROOT)/StockMarketTrading/APIWrappers/PaymentsNetwork.swift",
+				"$(SRCROOT)/StockMarketTrading/Utility/PaymentValidation/PaymentValidation.swift",
 			);
 			name = "Cuckoo Script";
 			outputFileListPaths = (
@@ -877,28 +924,33 @@
 				04F2C7A323C3262200A2D1DA /* UIAlertControllerExtension.swift in Sources */,
 				04F2C79F23C3262200A2D1DA /* BundleExtension.swift in Sources */,
 				04F2C7A423C3262200A2D1DA /* AlertAction.swift in Sources */,
+				04E0F24D23C6DCB300C6CC63 /* CurrencyFormatter.swift in Sources */,
 				04F2C7C523C34F1D00A2D1DA /* DashboardViewModel.swift in Sources */,
 				04F2C79823C3262200A2D1DA /* Date+Extensions.swift in Sources */,
-				04419B9023C4204600AAA181 /* BaseViewController.swift in Sources */,
 				04F2C70023C3229800A2D1DA /* ViewController.swift in Sources */,
 				04F2C78A23C3262200A2D1DA /* StoryboardScenes.swift in Sources */,
 				04F2C79E23C3262200A2D1DA /* NavigationControllerExtension.swift in Sources */,
 				04F2C7B923C3262200A2D1DA /* WebService.swift in Sources */,
-				04F2C7A223C3262200A2D1DA /* UITableView+Extensions.swift in Sources */,
 				04419B8E23C410BE00AAA181 /* ValidationUtils.swift in Sources */,
 				04F2C79B23C3262200A2D1DA /* CustomViewExtension.swift in Sources */,
 				04F2C78E23C3262200A2D1DA /* GeneratedFonts.swift in Sources */,
 				04F2C79623C3262200A2D1DA /* DateFormatter+Formatters.swift in Sources */,
+				049B1F9D23C6A5360096D0AF /* DoubleExtension.swift in Sources */,
 				04F2C6FC23C3229800A2D1DA /* AppDelegate.swift in Sources */,
 				04F2C6FE23C3229800A2D1DA /* SceneDelegate.swift in Sources */,
 				04F2C78F23C3262200A2D1DA /* Assets.swift in Sources */,
 				04F2C7C923C350EB00A2D1DA /* PriceModel.swift in Sources */,
+				04E0F25123C6E9DD00C6CC63 /* BaseViewProtocol.swift in Sources */,
 				04F2C79023C3262200A2D1DA /* GeneratedJSONFiles.swift in Sources */,
 				04419B8A23C40EDF00AAA181 /* ValidationResult.swift in Sources */,
+				04E0F25523C713B300C6CC63 /* CancelButton.swift in Sources */,
 				04F2C7B723C3262200A2D1DA /* URLRequest+Extensions.swift in Sources */,
+				04E0F24F23C6DF8800C6CC63 /* Style+Extension.swift in Sources */,
 				04F2C78B23C3262200A2D1DA /* GeneratedStrings.swift in Sources */,
 				04F2C79223C3262200A2D1DA /* ReusableView.swift in Sources */,
 				04F2C79723C3262200A2D1DA /* String+Extension .swift in Sources */,
+				048855FD23C60509003AB62B /* UIView+FadeTransition.swift in Sources */,
+				04E0F25323C6F37B00C6CC63 /* AppearanceType.swift in Sources */,
 				04F2C79D23C3262200A2D1DA /* UIViewControllerExtension.swift in Sources */,
 				04F2C7C323C34F0800A2D1DA /* DashboardViewController.swift in Sources */,
 				04F2C7BB23C3262200A2D1DA /* NetworkError.swift in Sources */,
@@ -915,6 +967,7 @@
 				04F2C71623C3229A00A2D1DA /* StockMarketTradingTests.swift in Sources */,
 				04F2C7D323C3545200A2D1DA /* MaterializedSequenceResult.swift in Sources */,
 				04F2C7D423C3545200A2D1DA /* MockError.swift in Sources */,
+				04FCC5DB23C59E7500D1F685 /* PaymentValidationTests.swift in Sources */,
 				04F2C7CC23C3537400A2D1DA /* GeneratedMocks.swift in Sources */,
 				04F2C7D723C3547800A2D1DA /* PaymentsNetworkTests.swift in Sources */,
 				04F2C7D923C35C0900A2D1DA /* DashboardViewModelTests.swift in Sources */,
