@@ -52,9 +52,15 @@ extension UIFont {
         return .regularFont(size: 17)
     }
     static var textButton: UIFont {
-        return .boldFont(size: 25)
+        return .regularFont(size: 24)
     }
     static var statusTitle: UIFont {
         return .boldFont(size: 16)
+    }
+    static var formattedDollar: UIFont {
+        return .boldFont(size: 40)
+    }
+    static var formattedCent: UIFont {
+        return .boldFont(size: 25)
     }
 }

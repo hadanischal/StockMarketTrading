@@ -25,10 +25,10 @@ extension UIColor {
         return UIColor.white
     }
     static var textFiledColor: UIColor {
-        return ColorName.charcoal100trans90.color
+        return ColorName.textFieldBaground.color
     }
-    static var coral: UIColor {
-        return ColorName.coral.color
+    static var brightOrange: UIColor {
+        return ColorName.brightOrange.color
     }
     static var segmentSelectedTitle: UIColor {
         return UIColor.black
@@ -36,26 +36,33 @@ extension UIColor {
     static var segmentDefaultTitle: UIColor {
         return UIColor.darkGray
     }
-    static var segmentIndicator: UIColor {
-        return UIColor(rgb: 0xEf8136)
+    static var segmentSellUnSelected: UIColor {
+        return ColorName.sellUnselected.color
     }
-    static var segmentSeparator: UIColor {
-        return ColorName.lightSilver.color
-    }
-    static var cellBorderColor: UIColor {
-        return ColorName.lightSilver.color
+    static var segmentBuyUnSelected: UIColor {
+        return ColorName.buyUnselected.color
     }
     static var statusColor: UIColor {
-        return ColorName.turquoiseSurf.color
+        return ColorName.headerColour.color
     }
+    static var headerBuyColor: UIColor {
+        return ColorName.headerBuy.color
+    }
+
     static var titleColor: UIColor {
         return UIColor.black
     }
-    static var descriptionColor: UIColor {
-        return UIColor.lightGray
+    static var cancelButtonColour: UIColor {
+        return ColorName.cancelButtonColour.color
     }
     static var buttonBaground: UIColor {
         return ColorName.primary.color
+    }
+    static var currencyUpdated: UIColor {
+        return ColorName.green537.color
+    }
+    static var currencyNotUpdated: UIColor {
+        return UIColor.white
     }
 }
 

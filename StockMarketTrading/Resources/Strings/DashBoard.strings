@@ -6,3 +6,14 @@
   Copyright © 2019 Nischal Hada. All rights reserved.
 */
 
+"TITLE" = "CMS | CFD";
+"UNIT_ERROR" = "Unit badly formatted";
+"AMOUNT_ERROR" = "Amount badly formatted";
+
+"FAILED_TITLE" = "Error";
+"SERVER_ERROR" = "Error contacting server";
+
+"HEADER_TITLE" = "UK-100 Cash";
+"HEADER_DESCRIPTION" = "Buy \n Market";
+
+"LEVEL1_TITLE" = "Level 1";
