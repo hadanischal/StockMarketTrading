@@ -22,7 +22,7 @@ internal enum StoryboardScene {
 
     internal static let initialScene = InitialSceneType<UIKit.UINavigationController>(storyboard: Main.self)
 
-    internal static let dashboardViewController = SceneType<StockMarketTrading.DashboardViewController>(storyboard: Main.self, identifier: "DashboardViewController")
+    internal static let dashboardViewController = SceneType<DashboardViewController>(storyboard: Main.self, identifier: "DashboardViewController")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

@@ -3,8 +3,8 @@
 
 xcassets:
   inputs:
-    - ./StockMarketTrading/Resources/Assets.xcassets
-    - ./StockMarketTrading/Resources/Icons.xcassets
+    - ./StockMarketTrading/Resources/Assets/Assets.xcassets
+    - ./StockMarketTrading/Resources/Assets/Icons.xcassets
   outputs:
     - templateName: swift4
       output: ./StockMarketTrading/Generated/SwiftGen/Assets/Assets.swift

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04323C9223DFDEF2007E54D3 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04323C9123DFDEF2007E54D3 /* Icons.xcassets */; };
 		04419B8A23C40EDF00AAA181 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8923C40EDF00AAA181 /* ValidationResult.swift */; };
 		04419B8C23C40FC000AAA181 /* PaymentValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8B23C40FC000AAA181 /* PaymentValidation.swift */; };
 		04419B8E23C410BE00AAA181 /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8D23C410BE00AAA181 /* ValidationUtils.swift */; };
@@ -47,7 +48,6 @@
 		04F2C7AB23C3262200A2D1DA /* DashBoard.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C76C23C3262200A2D1DA /* DashBoard.strings */; };
 		04F2C7AC23C3262200A2D1DA /* Mock.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C76D23C3262200A2D1DA /* Mock.strings */; };
 		04F2C7AD23C3262200A2D1DA /* BlockchainTicker.json in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C76F23C3262200A2D1DA /* BlockchainTicker.json */; };
-		04F2C7AF23C3262200A2D1DA /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C77123C3262200A2D1DA /* Icons.xcassets */; };
 		04F2C7B023C3262200A2D1DA /* StandardColors.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C77323C3262200A2D1DA /* StandardColors.txt */; };
 		04F2C7B123C3262200A2D1DA /* source-sans-pro.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C77523C3262200A2D1DA /* source-sans-pro.regular.ttf */; };
 		04F2C7B223C3262200A2D1DA /* source-sans-pro.light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04F2C77623C3262200A2D1DA /* source-sans-pro.light.ttf */; };
@@ -93,6 +93,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04323C9123DFDEF2007E54D3 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		04419B8923C40EDF00AAA181 /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 		04419B8B23C40FC000AAA181 /* PaymentValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentValidation.swift; sourceTree = "<group>"; };
 		04419B8D23C410BE00AAA181 /* ValidationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtils.swift; sourceTree = "<group>"; };
@@ -139,7 +140,6 @@
 		04F2C76C23C3262200A2D1DA /* DashBoard.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = DashBoard.strings; sourceTree = "<group>"; };
 		04F2C76D23C3262200A2D1DA /* Mock.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Mock.strings; sourceTree = "<group>"; };
 		04F2C76F23C3262200A2D1DA /* BlockchainTicker.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BlockchainTicker.json; sourceTree = "<group>"; };
-		04F2C77123C3262200A2D1DA /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		04F2C77323C3262200A2D1DA /* StandardColors.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StandardColors.txt; sourceTree = "<group>"; };
 		04F2C77523C3262200A2D1DA /* source-sans-pro.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro.regular.ttf"; sourceTree = "<group>"; };
 		04F2C77623C3262200A2D1DA /* source-sans-pro.light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro.light.ttf"; sourceTree = "<group>"; };
@@ -201,6 +201,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04323C9323DFDF7B007E54D3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				04F2C70723C3229A00A2D1DA /* Assets.xcassets */,
+				04323C9123DFDEF2007E54D3 /* Icons.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		04419B8823C40EC300AAA181 /* PaymentValidation */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,10 +457,9 @@
 		04F2C76A23C3262200A2D1DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04323C9323DFDF7B007E54D3 /* Assets */,
 				04F2C76B23C3262200A2D1DA /* Strings */,
 				04F2C76E23C3262200A2D1DA /* JsonFIle */,
-				04F2C70723C3229A00A2D1DA /* Assets.xcassets */,
-				04F2C77123C3262200A2D1DA /* Icons.xcassets */,
 				04F2C77223C3262200A2D1DA /* Colors */,
 				04F2C77423C3262200A2D1DA /* Fonts */,
 			);
@@ -682,6 +690,7 @@
 				04F2C7B123C3262200A2D1DA /* source-sans-pro.regular.ttf in Resources */,
 				04F2C73123C3252100A2D1DA /* swiftgen.yml in Resources */,
 				04F2C70B23C3229A00A2D1DA /* LaunchScreen.storyboard in Resources */,
+				04323C9223DFDEF2007E54D3 /* Icons.xcassets in Resources */,
 				04F2C70823C3229A00A2D1DA /* Assets.xcassets in Resources */,
 				04F2C7B223C3262200A2D1DA /* source-sans-pro.light.ttf in Resources */,
 				04F2C7AB23C3262200A2D1DA /* DashBoard.strings in Resources */,
@@ -692,7 +701,6 @@
 				04F2C7AC23C3262200A2D1DA /* Mock.strings in Resources */,
 				04FCC5DD23C59F1700D1F685 /* Cuckoo-GeneratedMocks.sh in Resources */,
 				04F2C70323C3229800A2D1DA /* Main.storyboard in Resources */,
-				04F2C7AF23C3262200A2D1DA /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

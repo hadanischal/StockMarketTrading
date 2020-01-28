@@ -10,7 +10,7 @@ import Foundation
 
 struct ValidationUtils {
     static let validationRegex = "^\\$?[0-9, ]*(\\.[0-9]{0,2})?$"
-    
+
     // validate two digit decimal value
     static func isValid(amount: String) -> Bool {
         let amountRegex = validationRegex // "[0-9]+(\\.[0-9][0-9]?)?"

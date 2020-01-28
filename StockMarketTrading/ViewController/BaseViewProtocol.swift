@@ -58,13 +58,12 @@ extension BaseViewProtocol {
     }
 
     func createSpinnerView() {
-        // add the spinner view controller
+        // add the spinner in view controller
         HUD.show(.progress)
     }
 
     func removeSpinnerView() {
-        // wait two seconds to simulate some work happening
-        // then remove the spinner view controller
+        //remove the spinner in view controller
         HUD.hide()
     }
 }

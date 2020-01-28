@@ -25,7 +25,7 @@ protocol DashboardDataSource {
     func viewDidLoad()
 }
 
-class DashboardViewModel: DashboardDataSource {
+final class DashboardViewModel: DashboardDataSource {
 
     //output
     let priceResult: Observable<PriceModel>
