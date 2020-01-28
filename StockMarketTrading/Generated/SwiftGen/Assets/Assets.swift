@@ -19,8 +19,10 @@
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal enum Assets {
+    internal static let iconsMore = ImageAsset(name: "iconsMore")
   }
   internal enum Icons {
+    internal static let menuIcon = ImageAsset(name: "menuIcon")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
