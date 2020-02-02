@@ -11,6 +11,7 @@
 		04419B8A23C40EDF00AAA181 /* ValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8923C40EDF00AAA181 /* ValidationResult.swift */; };
 		04419B8C23C40FC000AAA181 /* PaymentValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8B23C40FC000AAA181 /* PaymentValidation.swift */; };
 		04419B8E23C410BE00AAA181 /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04419B8D23C410BE00AAA181 /* ValidationUtils.swift */; };
+		0453F96E23E5181100404F3B /* .pecker.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0453F96D23E5181100404F3B /* .pecker.yml */; };
 		048855FD23C60509003AB62B /* UIView+FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048855FC23C60509003AB62B /* UIView+FadeTransition.swift */; };
 		049B1F9D23C6A5360096D0AF /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049B1F9C23C6A5360096D0AF /* DoubleExtension.swift */; };
 		04E0F24D23C6DCB300C6CC63 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0F24C23C6DCB300C6CC63 /* CurrencyFormatter.swift */; };
@@ -97,6 +98,7 @@
 		04419B8923C40EDF00AAA181 /* ValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResult.swift; sourceTree = "<group>"; };
 		04419B8B23C40FC000AAA181 /* PaymentValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentValidation.swift; sourceTree = "<group>"; };
 		04419B8D23C410BE00AAA181 /* ValidationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtils.swift; sourceTree = "<group>"; };
+		0453F96D23E5181100404F3B /* .pecker.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .pecker.yml; sourceTree = "<group>"; };
 		048855FC23C60509003AB62B /* UIView+FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FadeTransition.swift"; sourceTree = "<group>"; };
 		049B1F9C23C6A5360096D0AF /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		04E0F24C23C6DCB300C6CC63 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
@@ -538,6 +540,7 @@
 				04F2C72E23C3252100A2D1DA /* generate-swiftgen.sh */,
 				04F2C72F23C3252100A2D1DA /* swiftgen.yml */,
 				04F2C7BF23C3420600A2D1DA /* .swiftlint.yml */,
+				0453F96D23E5181100404F3B /* .pecker.yml */,
 			);
 			name = BuildScripts;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				9897FB56A44BF5541A0A53FD /* [CP] Embed Pods Frameworks */,
 				04F2C7BE23C3417400A2D1DA /* SwiftGen Script */,
 				04F2C7C123C3427400A2D1DA /* Swiftlint Script */,
+				0453F96F23E5187400404F3B /* Pecker Script */,
 			);
 			buildRules = (
 			);
@@ -689,6 +693,7 @@
 				04F2C73023C3252100A2D1DA /* generate-swiftgen.sh in Resources */,
 				04F2C7B123C3262200A2D1DA /* source-sans-pro.regular.ttf in Resources */,
 				04F2C73123C3252100A2D1DA /* swiftgen.yml in Resources */,
+				0453F96E23E5181100404F3B /* .pecker.yml in Resources */,
 				04F2C70B23C3229A00A2D1DA /* LaunchScreen.storyboard in Resources */,
 				04323C9223DFDEF2007E54D3 /* Icons.xcassets in Resources */,
 				04F2C70823C3229A00A2D1DA /* Assets.xcassets in Resources */,
@@ -722,6 +727,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0453F96F23E5187400404F3B /* Pecker Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Pecker Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which pecker >/dev/null; then\n  pecker\nelse\n  echo \"warning: Pecker not installed, download from https://github.com/woshiccm/Pecker\"\nfi\n";
+		};
 		04F2C7BE23C3417400A2D1DA /* SwiftGen Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

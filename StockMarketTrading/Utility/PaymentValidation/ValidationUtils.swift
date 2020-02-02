@@ -7,22 +7,19 @@
 //
 
 import Foundation
+import Regex
 
 struct ValidationUtils {
     static let validationRegex = "^\\$?[0-9, ]*(\\.[0-9]{0,2})?$"
 
     // validate two digit decimal value
     static func isValid(amount: String) -> Bool {
-        let amountRegex = validationRegex // "[0-9]+(\\.[0-9][0-9]?)?"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", amountRegex)
-        return predicate.evaluate(with: amount)
+        return amount =~ validationRegex
     }
 
     // validate two digit decimal value
     static func isValid(units: String) -> Bool {
-        let unitsRegex = validationRegex //"[0-9]+(\\.[0-9][0-9]?)?"
-        let predicate = NSPredicate(format: "SELF MATCHES %@", unitsRegex)
-        return predicate.evaluate(with: units)
+        return units =~ validationRegex
     }
 }
 //"^\\$?[0-9, ]*$"
