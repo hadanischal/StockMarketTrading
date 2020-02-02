@@ -12,6 +12,8 @@ target 'StockMarketTrading' do
   pod 'SwiftGen', '~> 6.0'
   pod 'PKHUD', '~> 5.0'
   pod 'SwiftRichString'
+  pod 'Pecker'
+  pod 'CrossroadRegex'
 
   target 'StockMarketTradingTests' do
     inherit! :search_paths

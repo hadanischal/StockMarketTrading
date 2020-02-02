@@ -1,6 +1,8 @@
 PODS:
+  - CrossroadRegex (1.1.0)
   - Cuckoo (1.0.6)
   - Nimble (8.0.5)
+  - Pecker (0.1.0)
   - PKHUD (5.3.0)
   - Quick (2.1.0)
   - RxBlocking (5.0.1):
@@ -18,8 +20,10 @@ PODS:
   - SwiftRichString (3.5.1)
 
 DEPENDENCIES:
+  - CrossroadRegex
   - Cuckoo (~> 1.0.6)
   - Nimble (~> 8)
+  - Pecker
   - PKHUD (~> 5.0)
   - Quick (~> 2.1.0)
   - RxBlocking (~> 5.0)
@@ -32,8 +36,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - CrossroadRegex
     - Cuckoo
     - Nimble
+    - Pecker
     - PKHUD
     - Quick
     - RxBlocking
@@ -46,8 +52,10 @@ SPEC REPOS:
     - SwiftRichString
 
 SPEC CHECKSUMS:
+  CrossroadRegex: 5eaadb3f7b4014728f1cbd1014756b126c1dbd9a
   Cuckoo: 8074fc309159c4862665b83798f5ad03e061e8bd
   Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
+  Pecker: 4888785f837260be662323a032a513fa9a20a285
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
   RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
@@ -59,6 +67,6 @@ SPEC CHECKSUMS:
   SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
   SwiftRichString: e7da1b0b1d931d7e1cee5f217972309c36867e03
 
-PODFILE CHECKSUM: 5fab3931b8cdc48735f1cbb80aaa91f42bc81318
+PODFILE CHECKSUM: 1be96c4b124cdeabdb3e92cf2e6ae92af09ea5d4
 
 COCOAPODS: 1.8.4
