@@ -226,7 +226,7 @@ final class DashboardViewController: UIViewController, BaseViewProtocol {
             .filter { $0.isValid }
             .map { $0.description }
             .filter { $0 != nil }
-            .map { $0!}
+            .compactMap { $0}
             .asDriver(onErrorJustReturn: "")
             .drive(onNext: { [weak self] amount in
                 self?.amountsTextField.text = amount
@@ -236,7 +236,7 @@ final class DashboardViewController: UIViewController, BaseViewProtocol {
             .filter { $0.isValid }
             .map { $0.description }
             .filter { $0 != nil }
-            .map { $0!}
+            .compactMap { $0 }
             .asDriver(onErrorJustReturn: "")
             .drive(onNext: { [weak self] units in
                 self?.unitsTextField.text = units

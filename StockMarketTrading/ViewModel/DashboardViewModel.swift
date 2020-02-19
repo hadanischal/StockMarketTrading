@@ -27,7 +27,7 @@ protocol DashboardDataSource {
 
 final class DashboardViewModel: DashboardDataSource {
 
-    //output
+    // output
     let priceResult: Observable<PriceModel>
     let errorResult: Observable<Error>
     let validatedUnits: Observable<ValidationResult>
@@ -44,7 +44,7 @@ final class DashboardViewModel: DashboardDataSource {
     let loaderStatus: Observable<Bool>
     let proceedFailed: Observable<String>
 
-    //input
+    // input
     private let paymentsNetworking: PaymentsNetworking
     private let validationService: PaymentValidating
 
@@ -133,12 +133,12 @@ final class DashboardViewModel: DashboardDataSource {
             .retry(2)
             .catchErrorJustReturn(nil)
             .filter { $0 != nil }
-            .map { $0! }
+            .compactMap { $0 }
     }
 
     func transformInput(_ inputUnits: Observable<String>, inputAmount: Observable<String>, confirmTaps: Observable<Void>) {
 
-        //Validate Units textfield
+        // Validate Units textfield
         inputUnits
             .map { units in
                 return self.validationService.validateUnits(units)
@@ -149,7 +149,7 @@ final class DashboardViewModel: DashboardDataSource {
             self.updateAmount(withUnit: result)
         }).disposed(by: disposeBag)
 
-        //Validate amount textfield
+        // Validate amount textfield
         inputAmount
             .map { amount in
                 return self.validationService.validateAmounts(amount)
@@ -160,7 +160,7 @@ final class DashboardViewModel: DashboardDataSource {
             self.updateUnit(withAmount: result)
         }).disposed(by: disposeBag)
 
-        //Button taps
+        // Button taps
         let unitsAndAmount = Observable.combineLatest(inputUnits, inputAmount) { (units: $0, amount: $1) }
 
         confirmTaps

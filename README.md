@@ -1,5 +1,5 @@
 # StockMarketTrading
-A fun app made with to demonstrate some examples of **clean architecture**, **SOLID principles** code organisation, loose coupling, **unit testing** and some of the best practices used in modern iOS programming using `Swift`. It displays a simple order placement ticket, showing real-time updating Bitcoin prices.
+A fun app made with to demonstrate some examples of MVVM pattern + RxSwift in Swift using **clean architecture**, **SOLID principles** code organisation, loose coupling, **unit testing** and some of the best practices used in modern iOS programming using `Swift`. It displays a simple order placement ticket, showing real-time updating Bitcoin prices.
 
 ## App Goal:
  - It Receive Bitcoin price updates (BUY and SELL) and update the BUY and SELL prices and SPREAD*  value on order ticket accordingly.
@@ -26,14 +26,16 @@ A fun app made with to demonstrate some examples of **clean architecture**, **SO
 - Then clean and build the project in Xcode
 
 ## 3rd Party Libraries
- - **`RxSwift`** - to make `Reactive` binding of API call and response
- - **`SwiftLint`** - A tool to enforce Swift style and conventions. 
- - **`SwiftGen`** - swift code generator for your assets, storyboards, Localizable.strings. 
- - **`SwiftRichString`** - Elegant, easy and swift-like way to create Attributed Strings
- - **`PKHUD`** - Swift based reimplementation of the Apple HUD
- - **`Quick`** - to unit test as much as possible
- - **`Nimble`** - to pair with Quick
- - **`Cuckoo`** - Tasty mocking framework for unit tests in swift
+- **`RxSwift`** - [ReactiveX/RxSwift](https://github.com/ReactiveX/RxSwift) is  used to make `Reactive` binding of API call and response
+- **`SwiftLint`** - [realm/SwiftLint](https://github.com/realm/SwiftLint) A tool to enforce Swift style and conventions. 
+- **`Pecker`** - [woshiccm/Pecker](https://github.com/woshiccm/Pecker) Pecker is a tool to automatically detect unused Swift code.
+- **`SwiftGen`** - [SwiftGen/SwiftGen](https://github.com/SwiftGen/SwiftGen) swift code generator for your assets, storyboards, Localizable.strings. \
+- **`SwiftRichString`** - [malcommac/SwiftRichString](https://github.com/malcommac/SwiftRichString) Elegant, easy and swift-like way to create Attributed Strings
+- **`CrossroadRegex`** - [crossroadlabs/Regex](https://github.com/crossroadlabs/Regex) Regex library to handell regular expressions for Swift in more swift-like way
+- **`PKHUD`** - [pkluz/PKHUD](https://github.com/pkluz/PKHUD) Swift based reimplementation of the Apple HUD
+- **`Quick`** - [Quick/Quick](https://github.com/Quick/Quick) is testing framework in swift
+- **`Nimble`** - [Quick/Nimble](https://github.com/Quick/Nimble) is Matcher Framework for Swift to pair with Quick
+- **`Cuckoo`** - [Brightify/Cuckoo](https://github.com/Brightify/Cuckoo) is tasty mocking framework for unit tests in swift
 
  ## TODO:
  - Persist between launches
